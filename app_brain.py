@@ -2,12 +2,9 @@ import urllib2
 from bs4 import BeautifulSoup
 import pandas as pd
 import csv
-lst = []
+package_list = []
 
-
-f = pd.read_csv('/home/kalagato/Downloads/final_v1.csv')
-package = f.package
-for i in package:
+for i in package_list:
 	alist = [i]
 	try:
 		# page = urllib2.urlopen('https://www.appbrain.com/app/india-news/ticketnew.android.ui' + i)
